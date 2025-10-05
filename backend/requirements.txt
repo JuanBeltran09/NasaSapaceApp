@@ -20,4 +20,3 @@ gunicorn==23.0.0      # para despliegue (opcional)
 
 pytest==8.3.2
 black==24.8.0
-gunicorn==23.0.0
