@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-NASA_POWER_URL = "  "
+NASA_POWER_URL = "https://power.larc.nasa.gov/api/temporal/daily/point"
 
 def get_nasa_weather_data(lat, lon, date_str, years_back=10):
     """
