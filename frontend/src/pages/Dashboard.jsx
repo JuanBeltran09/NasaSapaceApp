@@ -36,7 +36,7 @@ export default function Dashboard() {
 
   return (
     <div className="p-6 max-w-5xl mx-auto space-y-6">
-      <h1 className="text-3xl font-bold text-center">🌦️ Weather Probability App</h1>
+      <h1 className="text-3xl font-bold text-center">🌦️ Parce, ¿Va a llover?</h1>
 
       <div className="grid md:grid-cols-2 gap-4">
         <DateSelector date={date} onChange={setDate} />

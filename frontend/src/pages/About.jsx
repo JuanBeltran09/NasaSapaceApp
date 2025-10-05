@@ -35,7 +35,7 @@ export default function About() {
             <CloudSunRain className="text-white w-10 h-10" />
           </div>
           <h1 className="text-4xl font-bold text-white">
-            Acerca de Weather Probability App
+            Acerca de Parce, ¿Va a llover?
           </h1>
         </div>
         <p className="text-blue-50 text-lg leading-relaxed">
@@ -46,10 +46,10 @@ export default function About() {
       {/* Descripción principal */}
       <div className="bg-white rounded-2xl p-8 shadow-lg mb-8">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">
-          ¿Qué es Weather Probability App?
+          ¿Qué es Parce, ¿Va a llover??
         </h2>
         <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-          <strong className="text-blue-600">Weather Probability App</strong> es una aplicación desarrollada
+          <strong className="text-blue-600">Parce, ¿Va a llover?</strong> es una aplicación desarrollada
           para analizar y visualizar las probabilidades de diferentes tipos de
           clima, como días soleados, lluviosos, nublados o ventosos.
         </p>

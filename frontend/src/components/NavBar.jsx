@@ -20,7 +20,7 @@ export default function NavBar() {
         <Link to="/" className="flex items-center gap-2">
           <CloudSun className="w-6 h-6 text-blue-400" />
           <span className="font-semibold text-lg tracking-wide">
-            Weather Probability App
+            Parce, ¿Va a llover?
           </span>
         </Link>
 

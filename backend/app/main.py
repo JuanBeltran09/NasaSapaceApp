@@ -1,11 +1,15 @@
 from flask import Flask
 from flask_cors import CORS
+import os
 
 def create_app():
     app = Flask(__name__)
 
-    # ✅ Habilitar CORS para el frontend (React)
-    CORS(app, origins=["http://localhost:3000"])
+    # ✅ Permitir CORS tanto desde local como desde GitHub Pages
+    CORS(app, origins=[
+        "http://localhost:3000",
+        "https://tu-usuario.github.io"  # ← cámbialo por tu URL real de GitHub Pages
+    ])
 
     # Importar rutas
     from app.routes.health_routes import health_bp
@@ -18,6 +22,9 @@ def create_app():
     return app
 
 
+# ✅ Punto de entrada para Railway / Gunicorn
+app = create_app()
+
 if __name__ == "__main__":
-    app = create_app()
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
