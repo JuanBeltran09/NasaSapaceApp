@@ -4,8 +4,10 @@ import { fetchWeatherData } from "../api/weatherApi";
 import DateSelector from "../components/DateSelector";
 import MapSelector from "../components/MapSelector";
 import ResultCard from "../components/ResultCard";
-import ProbabilityChart from "../components/ProbabilityChart";
+import ProbabilityChartCarousel from "../components/ProbabilityChartCarousel";
 import DownloadButton from "../components/DownloadButton";
+import StatsCard from "../components/StatsCard";
+import WeatherLegend from "../components/WeatherLegend";
 
 export default function Dashboard() {
   const [date, setDate] = useState("");
@@ -57,10 +59,12 @@ export default function Dashboard() {
 
       {data && (
         <div className="space-y-6">
-          <ProbabilityChart resultados={data.resultados} />
-          <div className="grid md:grid-cols-2 gap-4">
-            <ResultCard title="Estadísticas" data={data.estadisticas} />
-            <ResultCard title="Variables usadas" data={data.variables_usadas} />
+          <ProbabilityChartCarousel resultados={data.resultados} />
+          <div>
+            <>
+              <StatsCard stats={data.estadisticas} />
+              <WeatherLegend />
+            </>
           </div>
           <DownloadButton data={data} />
         </div>
