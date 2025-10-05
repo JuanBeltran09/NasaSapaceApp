@@ -42,8 +42,7 @@ Antes de comenzar, asegúrate de tener instalados:
 ### 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/parce-va-a-llover.git
-cd parce-va-a-llover
+git clone https://github.com/JuanBeltran09/NasaSapaceApp.git
 ```
 
 ---
